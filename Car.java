@@ -19,7 +19,6 @@ public class Car {
     public int countCarStock (int) {
     return stock;
     }
-    public modifyColor(String color);
 
     public String getModel() {
         return model;
