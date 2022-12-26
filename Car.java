@@ -2,33 +2,30 @@ package backToTech;
 
 public class Car {
     //attributes
-    private String model;
-    private String color;
-    private String fuelType; //TODO this should be an enum https://www.w3schools.com/java/java_enums.asp
-    private int speed;
+    protected String model;
+    protected String color;
+    protected FuelType fuelType;
+    protected int speed;
 
     //TODO add millage property
 
     //TODO add a fuel tank property
 
-    private int stock; //TODO the car should not know about the available stock. This is the job of the shop.
+
     // TODO See single responsibility principle
     //  https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#single-responsibility-principle
 
     //constructor
     //TODO car should receive engine as a parameter. There will be 3 type of engines: Diesel, Petrol and Electric. Use a common interface for all three (see the factory method pattern)
     //TODO car should receive the fuel tank as a parameter. There will be 2 types of fuel tanks: Fossil and Battery. Use a common interface for bought (see the factory method pattern)
-    public Car(String model, String color, String fuelType, int speed) {
-        this.model = model;
-        this.color = color;
-        this.fuelType = fuelType;
-        this.speed = speed;
+    public Car(String model, String color, FuelType fuelType, int speed) {
+        this.setModel(model);
+        this.setColor(color);
+        this.setFuelType(fuelType);
+        this.setSpeed(speed);
     }
 
     //methods
-    public int countCarStock () {
-        return stock;
-    }
 
     public String getModel() {
         return model;
@@ -46,12 +43,20 @@ public class Car {
         this.color = color;
     }
 
-    public String getFuelType() {
+    public FuelType getFuelType() {
         return fuelType;
     }
 
-    public void setFuelType(String fuelType) {
+    public void setFuelType(FuelType fuelType) {
         this.fuelType = fuelType;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     //TODO add start method
