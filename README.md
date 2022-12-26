@@ -1,5 +1,5 @@
 # OOP_Principles_Java
-About the OOP principles in Java
+About the OOP principles in Java.
 
 ## User stories
 - [ ] As a user I can select desired color for a new car
