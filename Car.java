@@ -4,8 +4,11 @@ public class Car {
     //attributes
     protected String model;
     protected String color;
-    protected FuelType fuelType;
+    protected EngineType fuelType;
     protected int speed;
+    protected int millage;
+
+
 
     //TODO add millage property
 
@@ -18,7 +21,7 @@ public class Car {
     //constructor
     //TODO car should receive engine as a parameter. There will be 3 type of engines: Diesel, Petrol and Electric. Use a common interface for all three (see the factory method pattern)
     //TODO car should receive the fuel tank as a parameter. There will be 2 types of fuel tanks: Fossil and Battery. Use a common interface for bought (see the factory method pattern)
-    public Car(String model, String color, FuelType fuelType, int speed) {
+    public Car(String model, String color, EngineType fuelType, int speed) {
         this.setModel(model);
         this.setColor(color);
         this.setFuelType(fuelType);
@@ -43,11 +46,11 @@ public class Car {
         this.color = color;
     }
 
-    public FuelType getFuelType() {
+    public EngineType getFuelType() {
         return fuelType;
     }
 
-    public void setFuelType(FuelType fuelType) {
+    public void setFuelType(EngineType fuelType) {
         this.fuelType = fuelType;
     }
 

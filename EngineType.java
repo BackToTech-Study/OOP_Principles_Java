@@ -1,5 +1,5 @@
 package backToTech;
 
-public enum FuelType {
+public enum EngineType {
     PETROL, DIESEL, HYBRID, ELECTRIC
 }
