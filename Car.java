@@ -7,20 +7,20 @@ public class Car {
     protected EngineType fuelType;
     protected int speed;
     protected int millage;
+    protected String fuelTank;
 
 
+    //**TODO add millage property
 
-    //TODO add millage property
-
-    //TODO add a fuel tank property
+    //**TODO add a fuel tank property
 
 
     // TODO See single responsibility principle
     //  https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#single-responsibility-principle
 
     //constructor
-    //TODO car should receive engine as a parameter. There will be 3 type of engines: Diesel, Petrol and Electric. Use a common interface for all three (see the factory method pattern)
-    //TODO car should receive the fuel tank as a parameter. There will be 2 types of fuel tanks: Fossil and Battery. Use a common interface for bought (see the factory method pattern)
+    //**TODO car should receive engine as a parameter. There will be 3 type of engines: Diesel, Petrol and Electric. Use a common interface for all three (see the factory method pattern)
+    //**TODO car should receive the fuel tank as a parameter. There will be 2 types of fuel tanks: Fossil and Battery. Use a common interface for bought (see the factory method pattern)
     public Car(String model, String color, EngineType fuelType, int speed) {
         this.setModel(model);
         this.setColor(color);
